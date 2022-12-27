@@ -46,7 +46,7 @@ namespace information.Controllers
                     return Ok(list);
                 }
             }
-            catch (Exception ex) {await CreateErr("MainX.get",db,ex); }
+            catch (Exception ex) {await Reg.CreateErr("MainX.get",db,ex); }
             return BadRequest();
         }
 
@@ -64,7 +64,7 @@ namespace information.Controllers
                 await db.SaveChangesAsync();
                 return Ok(obj);
             }
-            catch (Exception ex)            {await CreateErr("MainX.Create",db,ex);            }
+            catch (Exception ex)            {await Reg.CreateErr("MainX.Create",db,ex);            }
             return BadRequest();
 
         }
@@ -97,7 +97,7 @@ namespace information.Controllers
 
 
             }
-            catch (Exception ex)            {await CreateErr("MainX.Update",db,ex);            }
+            catch (Exception ex)            {await Reg.CreateErr("MainX.Update",db,ex);            }
             return BadRequest();
         }
 
@@ -120,7 +120,7 @@ namespace information.Controllers
 
 
             }
-            catch (Exception ex)            {await CreateErr("MainX.Delete",db,ex);            }
+            catch (Exception ex)            {await Reg.CreateErr("MainX.Delete",db,ex);            }
             return Ok(false);
         }
     }
