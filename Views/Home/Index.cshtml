@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style> 
+#text{
+        height: center;
+        width: center;
+        margin-left: center;
+        margin-top: center;
+}
+
+#text:hover{
+  transform : scale(2);
+  transition: transform 1s ease-in-out;
+  transform-origin : center;
+}
+
+    body {
+        background-color: rgba(255, 99, 71, 0.5);
+    }
+
+    h3 {
+        color: Tomato ;
+    }
+</style>
+
+<div id="text" class="text-center">
+    <h4> Hello MY Small Coding</h4>
+</div>
+<div class="text-center">
+    @{
+        var data = (Store)ViewData["Message"];
+    }
+    <h3>ID : @data.Id</h3>
+
+    <h3>Name : @data.Name</h3>
+
+    <h3>FamilyName : @data.FamilyName</h3>
+
+    <h3>Address : @data.Address</h3>
+
+    <h3>CountryOfOrigin : @data.CountryOfOrigin</h3>
+
+    <h3>EMailAdress : @data.EMailAdress</h3>
+
+    <h3>Age : @data.Age</h3>
+
+    <h3> h : @data.Hired</h3>
+
+
+</div>
