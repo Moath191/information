@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/ageeb/Downloads/information/information/information.csproj": {}
+    "C:\\Web_Test\\information2022-12-27\\information\\information\\information.csproj": {}
   },
   "projects": {
-    "/home/ageeb/Downloads/information/information/information.csproj": {
+    "C:\\Web_Test\\information2022-12-27\\information\\information\\information.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ageeb/Downloads/information/information/information.csproj",
+        "projectUniqueName": "C:\\Web_Test\\information2022-12-27\\information\\information\\information.csproj",
         "projectName": "information",
-        "projectPath": "/home/ageeb/Downloads/information/information/information.csproj",
-        "packagesPath": "/home/ageeb/.nuget/packages/",
-        "outputPath": "/home/ageeb/Downloads/information/information/obj/",
+        "projectPath": "C:\\Web_Test\\information2022-12-27\\information\\information\\information.csproj",
+        "packagesPath": "C:\\Users\\mabakri-c\\.nuget\\packages\\",
+        "outputPath": "C:\\Web_Test\\information2022-12-27\\information\\information\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ageeb/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mabakri-c\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,9 +40,47 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             }
           },
           "imports": [
@@ -62,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/ageeb/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

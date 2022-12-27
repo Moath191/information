@@ -1,9 +1,14 @@
+using information.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
+string ConnectionString = "workstation id=myInformation2022.mssql.somee.com;packet size=4096;user id=muaz_asiri_SQLLogin_1;pwd=yuz9ss9u8c;data source=myInformation2022.mssql.somee.com;persist security info=False;initial catalog=myInformation2022";
 
+builder.Services.AddDbContext<MyDB>(options => options.UseSqlServer(ConnectionString));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

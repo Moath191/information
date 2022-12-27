@@ -7,6 +7,33 @@ namespace information.Models
 {
     public static class Reg
     {
+
+/// <summary>
+/// إضافة خطأ داخل قاعدة البيانات
+/// </summary>
+/// <param name="db"></param>
+/// <param name="ex"></param>
+/// <returns></returns>
+public static async Task<bool> CreateErr(string location,MyDB db,Exception ex){
+try{
+string innerMess="";
+Exception Inner=ex.InnerExpception;
+if(Inner!=null){   innerMess= Inner.Message;}
+
+Err err=new {
+    Location=location,
+Message=ex.Message,
+InnerMessage=innerMess
+};
+db.Erres.add(err);
+await db.SaveChangesAsync();
+return true;
+}catch{    return false;}
+
+}
+
+
+
         //تمثل قاعدة البيانات
         public static List<Store> MyStore = new();
 
@@ -34,22 +61,18 @@ namespace information.Models
         }
 
         //إضافة
-        public static Store? Create_Sort(Store obj)
+        public static Store? Create_Sort(Store obj,MyDB db)
         {
             try
             {
                 MyStore.Add(obj);
                 return obj;
             }
-            catch (Exception ex)
-            {
-
-                Console.WriteLine(ex.Message);
-            }
+           catch (Exception ex)            {await CreateErr("Reg.Create_Sort",db,ex);            }
             return null;
         }
         //تعديل
-        public static Store? Update_Sort(int id, Store Up)
+        public static Store? Update_Sort(int id, Store Up,MyDB db)
         {
             try
             {
@@ -68,11 +91,8 @@ namespace information.Models
                     return Up;
                 }
             }
-            catch (Exception ex)
-            {
+                      catch (Exception ex)            {await CreateErr("Reg.Update_Sort",db,ex);            }
 
-                Console.WriteLine(ex.Message);
-            }
             return null;
         }
 
