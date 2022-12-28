@@ -52,7 +52,8 @@ try
         pattern: "{controller=Home}/{action=Index}/{id?}");
 
     app.Run();
-}catch (Exception ex)
+}
+catch (Exception ex)
 {
 
     

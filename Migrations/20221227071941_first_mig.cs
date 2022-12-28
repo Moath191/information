@@ -14,9 +14,9 @@ namespace information.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
-                    FamilyName = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Name = table.Column<string>(type: "varchar", nullable: false),
+                    FamilyName = table.Column<string>(type: "varchar", nullable: true),
+                    Address = table.Column<string>(type: "varchar", nullable: false),
                     CountryOfOrigin = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EMailAdress = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),

@@ -73,7 +73,6 @@ namespace information.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FamilyName")
-                        .HasMaxLength(5)
                         .HasColumnType("varchar");
 
                     b.Property<bool>("Hired")

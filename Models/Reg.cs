@@ -9,7 +9,7 @@ namespace information.Models
     {
 
 /// <summary>
-/// إضافة خطأ داخل قاعدة البيانات
+/// add the Error in DataBase
 /// </summary>
 /// <param name="db"></param>
 /// <param name="ex"></param>
@@ -34,10 +34,10 @@ return true;
 
 
 
-        ////تمثل قاعدة البيانات
+        ////datebase
         //public static List<Store> MyStore = new();
 
-        //// البيانات الإفتراضية
+        //// defult data
         //public static Store GetDefultStore()
         //{
 
@@ -54,13 +54,13 @@ return true;
         //    };
         //}
 
-        ////كل البيانات 
+        ////all date 
         //public static List<Store> GetList()
         //{
         //    return MyStore;
         //}
 
-        ////إضافة
+        ////add
         //public static async Task<Store?> Create_Sort(Store obj,MyDB db)
         //{
         //    try
@@ -71,7 +71,7 @@ return true;
         //   catch (Exception ex)            {await Reg.CreateErr("Reg.Create_Sort",db,ex);            }
         //    return null;
         //}
-        ////تعديل
+        ////update
         //public static async Task<Store?> Update_Sort(int id, Store Up,MyDB db)
         //{
         //    try
@@ -96,7 +96,7 @@ return true;
         //    return null;
         //}
 
-        ////عرض 
+        ////sort 
         //public static Store? Detalis_Sort(int id)
         //{
         //    try
@@ -112,7 +112,7 @@ return true;
         //    }
         //    return null;
         //}
-        ////حذف
+        ////delete
         //public static bool Delete_Sort(int id)
         //{
         //    try

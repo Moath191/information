@@ -57,7 +57,7 @@ namespace information.Controllers
             {
                 if (!ModelState.IsValid)
                 {
-                    return BadRequest("ارجو تعبئة الفراغات");
+                    return BadRequest("Please fill in the blanks");
                 }
                 // var s = Reg.Create_Sort(obj);
                 db.Stores.Add(obj);
@@ -77,7 +77,7 @@ namespace information.Controllers
             {
                 if (!ModelState.IsValid)
                 {
-                    return BadRequest("ارجو تعبئة الفراغات");
+                    return BadRequest("Please fill in the blanks");
                 }
 
                 // var s = Reg.Update_Sort(id, obj);
@@ -107,7 +107,7 @@ namespace information.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest("ارجو تعبئة الفراغات");
+                return BadRequest("Please fill in the blanks");
             }
             try
             {
