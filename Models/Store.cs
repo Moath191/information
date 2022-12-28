@@ -11,22 +11,23 @@ namespace information.Models
 
         public int Id { get; set; }
 
-        [StringLength(5)]
+        [MinLength(5)]
         [Required(ErrorMessage = "الرجاء إدخال اسم الشخص")]
         public string? Name { get; set; }
 
-        [StringLength(5)]
-
+        [MinLength(5)]
         public string? FamilyName { get; set; }
 
-        [StringLength(10)]
+        [MinLength(10)]
         [Required]
         public string? Address { get; set; }
 
         public string? CountryOfOrigin { get; set; }
+
         [EmailAddress]
         [Required]
         public string? EMailAdress { get; set; }
+
         [Range(20, 60)]
         [Required]
         public int Age { get; set; }

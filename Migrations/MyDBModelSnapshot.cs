@@ -60,8 +60,7 @@ namespace information.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("varchar");
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
@@ -75,15 +74,14 @@ namespace information.Migrations
 
                     b.Property<string>("FamilyName")
                         .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasColumnType("varchar");
 
                     b.Property<bool>("Hired")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasColumnType("varchar");
 
                     b.HasKey("Id");
 
